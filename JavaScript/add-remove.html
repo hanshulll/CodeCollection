@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <style>
+ .box1{
+ border: 2px solid;
+ margin: 40px;
+ padding: 40px;
+ }
+ .boxbutton{
+ margin: 20px;
+ }
+ </style>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/ang
+ular.min.js"></script>
+ <script>
+ var app = angular.module("myShoppingList", []);
+ app.controller("myCtrl", function($scope) {
+ $scope.products = [];
+ $scope.addItem = function(){
+ $scope.errortext = ""; 
+ if(!$scope.addMe){
+ return;
+ }
+ if($scope.products.indexOf($scope.addMe) == -1){
+ $scope.products.push($scope.addMe);
+ }
+ else {
+ $scope.errortext = "The item is already in your shopping list.";
+ }
+ }
+ $scope.removeItem = function(x){
+ $scope.errortext ="";
+ $scope.products.splice(x, 1);
+ }
+ });
+ </script>
+ </head>
+ <body ng-app="myShoppingList" ng-controller="myCtrl">
+ <div ng-app="myShoppingList" ngcloak ngcontroller="myCtrl" class="box1" style="max-width:400px;">
+ <header class="boxhead">
+ <h3>Books</h3>
+ </header>
+ <ul class="w3-ul">
+ <li ng-repeat="x in products" class="boxlist">{{x}}
+ <span ngclick="removeItem($index)" style="cursor:pointer;">×</span>
+ </li>
+ </ul>
+ <div class="boxcart">
+ <div class="boxtop">
+ <div class="boxhoder">
+ <input placeholder="Add shopping items here" ngmodel="addMe">
+ </div>
+ <div class="boxbutton">
+ <button ng-click="addItem()">ADD</button>
+ </div>
+ </div>
+ <p class="w3-text-red" style="color: red;">{{errortext}}</p>
+ </div>
+ </div>
+ </body>
+</html>
