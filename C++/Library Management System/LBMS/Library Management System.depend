@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1479901668 source:c:\users\lenovo\desktop\library management system\library.cpp
+	<iostream>
+	<fstream>
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<process.h>
+	<string.h>
+	<iomanip>
+	<windows.h>
+
+1479901964 source:c:\users\lenovo\desktop\library management system\lbms\library.cpp
+	<iostream>
+	<fstream>
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<process.h>
+	<string.h>
+	<iomanip>
+	<windows.h>
+
