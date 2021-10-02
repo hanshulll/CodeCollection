@@ -10,6 +10,44 @@
 
 <br>
 
+## What is HacktoberFest🏵️?
+Hacktoberfest, in its 8th year, is a month-long celebration of open source software run by DigitalOcean. During the month of October, you are invited to join open-source software enthusiasts, beginners, and the developer community by contributing to open-source projects.
+
+# Rewards🥇
+- For beginners this is the great opportunity to dive in the pool of open source.
+- Laptop stickers
+- Hacktoberfest T-shirt👕/Tree🌱(Tree planted in your name and help make Hacktoberfest 2021 more carbon neutral) 
+
+# Rules📃
+🏷️To earn your Hacktoberfest reward, you must register and make four valid pull requests (PRs) between October 1-31 (in any time zone). PRs can be made to any public repo on GitHub, not only the ones with issues labeled Hacktoberfest. If a maintainer reports your pull request as spam or behavior not in line with the project’s code of conduct, you will be ineligible to participate.
+
+# Instructions 📜
+
+- First fork this repository.
+- Repeated codes will not be merged.
+- The quality of pull requests is paramount,quantity comes second.
+- Submit atleast four pull requests.
+- No programming language boundation.
+ 
+ ## FAQ
+
+#### 	💥What is Pull Request ?
+
+Pull requests let you tell others about changes you've pushed to a branch in a repository on GitHub.
+
+#### 	💥What is Fork?
+
+A fork is a copy of a repository that you manage. Forks let you make changes to a project without affecting the original repository. You can fetch updates from or submit changes to the original repository with pull requests.
+
+#### 	💥How to create a Pull Request?
+[Creating Pull Request](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github)
+
+#### 	💥How to rebase and update Pull Request?
+[Rebasing and Updating Pull Request](https://www.digitalocean.com/community/tutorials/how-to-rebase-and-update-a-pull-request)
+
+#### 🌟You can Star and Fork this repository 🌟.
+
+
 ## 🚀 Quick Start :
 
 #### Step 1: Forking the repository :
