@@ -1,0 +1,72 @@
+import java.util.*;
+class LinkedList {
+    Node head;
+    static class Node {
+        int data;
+        Node next;
+
+        Node(int d) {
+            data = d;
+            next = null;
+        }
+    }
+    public static LinkedList insert(LinkedList list, int data) {
+        Node new_node = new Node(data);
+        new_node.next = null;
+        if (list.head == null) {
+            list.head = new_node;
+        } else {
+            Node last = list.head;
+            while (last.next != null) {
+                last = last.next;
+            }
+
+            last.next = new_node;
+        }
+        return list;
+    }
+
+    public static void printlist(LinkedList list) {
+        Node temp = list.head;
+        while (temp != null) {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+    void remove(){
+        Node ptr1 = null, ptr2 = null, dup = null;
+        ptr1 = head;
+        while (ptr1 != null && ptr1.next != null) {
+            ptr2 = ptr1;
+            while (ptr2.next != null) {
+                if (ptr1.data == ptr2.next.data) {
+                    dup = ptr2.next;
+                    ptr2.next = ptr2.next.next;
+                    System.gc();
+                }
+                else {
+                    ptr2 = ptr2.next;
+                }
+            }
+            ptr1 = ptr1.next;
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        LinkedList ll = new LinkedList();
+        ll = insert(ll, 2);
+        ll = insert(ll, 5);
+        ll = insert(ll, 4);
+        ll = insert(ll, 2);
+        ll = insert(ll, 5);
+        ll = insert(ll, 7);
+        ll = insert(ll, 5);
+        ll = insert(ll, 1);
+        System.out.println("Original Linked list:");
+        printlist(ll);
+        System.out.println("After removing duplicates:");
+        ll.remove();
+        printlist(ll);
+    }
+}
