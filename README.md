@@ -2,7 +2,7 @@
 
 <h1 align="center">Hacktoberfest2021 <br></h1>
 <h4 align=center>Hacktoberfest is a month-long celebration of open source software sponsored by Digital Ocean, Intel, and DEV.</h4>
-<h4 align=center>Do push your code in any language to the repository to help contributing !!</h4>
+
 
 <img src="https://i.ibb.co/cgNjFRR/hacktober.png" width="100%">
 
