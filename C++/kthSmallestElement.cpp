@@ -1,3 +1,18 @@
+/*
+Problem Description: Given an array arr[] and an integer K where K is smaller than size of array, the task is to find the Kth smallest element in the given array. It is given that all array elements are distinct.
+Time Complexity: O(N)
+
+Sample Input:
+1
+6
+4 10 2 3 20 9
+3
+
+Sample Output:
+4
+
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
