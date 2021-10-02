@@ -1,7 +1,7 @@
 
 import java.util.Scanner
 
-public class InputDisplay {
+class InputDisplay {
 
     private val scanner: Scanner = Scanner(System.`in`)
 
