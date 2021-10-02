@@ -1,3 +1,0 @@
-# Ignore Mac DS_Store files
-.DS_Store
-**/.DS_Store
