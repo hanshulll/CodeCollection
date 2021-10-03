@@ -77,3 +77,5 @@ class  Maximumwater {
         int n = height.length;
  
         System.out.print(maxWater(height, n));
+    }
+}
