@@ -1,3 +1,6 @@
+//https://github.com/suvarna-13
+// This is a cpp program that inputs two sorted arrays of different lengths and merges it into a single array. The output is printed as a merged sorted array
+
 #include <stdio.h>
 int main() {
 	int m,n,s,i,j,temp;
