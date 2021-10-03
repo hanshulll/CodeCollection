@@ -1,3 +1,5 @@
+#Github username: Mayurishinde27
+
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -13,10 +15,10 @@ int print(struct node* run)
 
 	while(run!=NULL)
 	{
-		printf(" %d ",run->data);
+		printf(" %d->",run->data);
 		run=run->next;
 	}
-
+printf(" NULL");
 }
 
 
@@ -25,23 +27,23 @@ int main()
     struct node* head;
     struct node* temp;
     temp=(struct node*)malloc(sizeof(struct node));
-    temp->data=10;
+    temp->data=12;
     temp->next=NULL;
    
     struct node* temp1;
     temp1=(struct node*)malloc(sizeof(struct node));
-    temp1->data=11;
+    temp1->data=26;
     temp1->next=NULL;
     temp->next=temp1;
     
     struct node* temp2;
     temp2=(struct node*)malloc(sizeof(struct node));
-    temp2->data=12;
+    temp2->data=27;
     temp2->next=NULL;
    
     struct node* temp3;
     temp3=(struct node*)malloc(sizeof(struct node));
-    temp3->data=13;
+    temp3->data=6;
     temp3->next=NULL;
     temp2->next=temp3;
     
@@ -54,7 +56,7 @@ int main()
     
     struct node* mid;
     mid=(struct node*)malloc(sizeof(struct node));
-    mid->data= 6;
+    mid->data= 2;
     mid->next=NULL;
     mid->next=temp2;
     
@@ -70,3 +72,6 @@ int main()
  
  return 0;	
 }
+
+OUTPUT:
+ 5-> 12-> 26-> 2-> 27-> 6-> 7-> NULL
