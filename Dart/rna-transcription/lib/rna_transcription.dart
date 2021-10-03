@@ -1,3 +1,5 @@
+// * Solutions By SushanShakya
+
 class RnaTranscription {
   static const conversion = {
     'G': 'C',

@@ -1,3 +1,5 @@
+// * Solutions By SushanShakya
+
 class SpaceAge {
   static const Map<String, double> dayCount = {
     'Mercury': 0.2408467,

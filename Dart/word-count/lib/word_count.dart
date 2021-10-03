@@ -1,3 +1,5 @@
+// * Solutions By SushanShakya
+
 class WordCount {
   Map<String, int> countWords(String s) {
     RegExp re = RegExp(r"\w+('(t|ve|d))?");
