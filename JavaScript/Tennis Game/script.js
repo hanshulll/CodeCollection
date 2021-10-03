@@ -1,4 +1,4 @@
-//SAKSHAM JAIN   ############################
+//SAKSHAM_JAIN   ############################
 var canvas;
 var canvasContext;
 var ballX=50;
