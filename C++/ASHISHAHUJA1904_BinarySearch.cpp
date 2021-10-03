@@ -1,3 +1,4 @@
+//Name- Ashish Ahuja
 #include <iostream>
 using namespace std;
 //binary search implementation (assuming that the given array is arranged in ascending order)
