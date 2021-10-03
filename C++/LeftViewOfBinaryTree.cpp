@@ -1,5 +1,7 @@
-// Problem Statement: Given a Binary Tree, print Left view of it. Left view of a Binary Tree is set of nodes visible when tree is visited from Left side.
+#github-username: Yashika27
+
 // Problem Link: https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/1
+// Problem Description: Given a Binary Tree, print Left view of it. Left view of a Binary Tree is set of nodes visible when tree is visited from Left side.
 // Solution is as follows:
 
 vector<int> leftView(Node *root)
