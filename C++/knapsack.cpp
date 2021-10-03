@@ -1,5 +1,9 @@
+// GITHUB Username: kashishvir
 // A dynamic programming based
 // solution for 0-1 Knapsack problem
+
+// In the Dynamic programming we will work considering the same cases as mentioned in the recursive approach. In a DP[][] table let’s consider all the possible weights from ‘1’ to ‘W’ as the columns and weights that can be kept as the rows. 
+// The state DP[i][j] will denote maximum value of ‘j-weight’ considering all values from ‘1 to ith’. So if we consider ‘wi’ (weight in ‘ith’ row) we can fill it in all columns which have ‘weight values > wi’. 
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -47,3 +51,7 @@ int main()
 
     return 0;
 }
+// Time Complexity: O(N*W). 
+// where ‘N’ is the number of weight element and ‘W’ is capacity. As for every weight element we traverse through all weight capacities 1<=w<=W.
+// Auxiliary Space: O(N*W). 
+// The use of 2-D array of size ‘N*W’.
