@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+footer{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 200px;
+    background-color: #181b1d;
+
+}
+
+footer h2{
+    margin: 0px 0px 30px 0px;
+    padding: 30px 0px 0px 0px;
+    font-size: 30px;
+    text-decoration: underline #86C232 ;
+
+    
+}
+footer p{
+    margin: 0px 0px 40px 0px;
+    font-size: 18px;
+}
+
+footer p span{
+    color: #86C232;
+    font-weight: bold;
+}
+
