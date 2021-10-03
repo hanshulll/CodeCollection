@@ -1,3 +1,6 @@
+#username :- ravi4713
+#cycle detection program from hackerank
+
 def has_cycle(head):
     
     if head is None:
