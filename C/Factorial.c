@@ -1,3 +1,4 @@
+// Program to find factorial if a number.
 #include<stdio.h>
 int main(){
 	int fact=1,num,i;
