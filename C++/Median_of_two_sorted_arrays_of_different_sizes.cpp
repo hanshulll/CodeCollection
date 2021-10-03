@@ -1,3 +1,6 @@
+// I have added Median of Two Sorted Arrays question asked in most interviews
+// github usrename: @rushikeshadhav
+
 // A Simple Merge based O(n) solution to find 
 // median of two sorted arrays 
 #include <bits/stdc++.h>
