@@ -1,3 +1,6 @@
+// I have added Allocate Minimum Number of Pages question asked in most interviews
+// github usrename: @rushikeshadhav
+
 // C++ program for optimal allocation of pages
 #include<bits/stdc++.h>
 using namespace std;
