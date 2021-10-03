@@ -1,0 +1,26 @@
+#include<iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	float cn_Radius, cn_Height, cn_sa, cn_Volume, cn_LSA, cn_len;
+	
+	cout << "\nPlease Enter the Radius of a Cone = ";
+	cin >> cn_Radius;
+	
+	cout << "\nPlease Enter the Height of a Cone = ";
+	cin >> cn_Height;
+	
+	cn_len    = sqrt(cn_Radius * cn_Radius + cn_Height * cn_Height);
+	cn_sa     = M_PI * cn_Radius * (cn_Radius + cn_len);
+	cn_Volume = (1.0/3) * M_PI * cn_Radius * cn_Radius * cn_Height;
+	cn_LSA    = M_PI * cn_Radius * cn_len; //cn_LSA= Lateral Surface Area of cone
+	
+	cout << "\nLength of a Side(Slant)of a Cone    =  " << cn_len;
+	cout << "\nThe Surface Area of a Cone          =  " << cn_sa;
+	cout << "\nThe Volume of a Cone                =  " << cn_Volume;
+	cout << "\nThe Lateral Surface Area of a Cone  =  " << cn_LSA;
+		
+ 	return 0;
+}

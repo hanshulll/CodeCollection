@@ -1,0 +1,32 @@
+//  Contributor info : 
+//  Name: Anisha Agarwal
+//   Github: https://github.com/anisha16
+
+
+
+/**
+ *Description: Write a Program to find third maximum element in an array
+ */
+
+import java.util.*;
+class third_max
+{
+    public static void main(String args[])
+    {
+        int[] a = {1 , 3 , 2 , -2 , -4 , -9};
+        System.out.println(thirdMax(a));
+    }
+    static int thirdMax(int[] a)
+    {
+        Set <Integer> maxElements = new HashSet <>();
+        for(int element : a)
+        {
+            maxElements.add(element);
+            if(maxElements.size() > 3)
+                maxElements.remove(Collections.min(maxElements));
+        }
+        if(maxElements.size() == 3)
+            return Collections.min(maxElements);
+        return Collections.max(maxElements);
+    }
+}
