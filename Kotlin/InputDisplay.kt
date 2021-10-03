@@ -1,6 +1,12 @@
 
 import java.util.Scanner
 
+/**
+ * This program request for an input from the user
+ * and displays the input on the console
+ *
+ * GitHub Username: mayorJAY
+ */
 class InputDisplay {
 
     private val scanner: Scanner = Scanner(System.`in`)

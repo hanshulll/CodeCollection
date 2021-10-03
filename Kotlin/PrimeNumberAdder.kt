@@ -1,6 +1,13 @@
 
 import kotlin.math.sqrt
 
+/**
+ * This program takes an array of numbers
+ * and sums up all the prime numbers available
+ * in the array
+ *
+ * GitHub Username: mayorJAY
+ */
 class PrimeNumberAdder {
 
     fun main() {
