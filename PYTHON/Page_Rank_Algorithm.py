@@ -7,7 +7,6 @@ import time
 
 import tabulate
 
-
 def generateOutlinkVector(adjMatrix: list) -> list:
     """Takes the adjacency matrix of a network as arguments and returns the vector
     containing the number of outlinks each node has.
