@@ -15,7 +15,8 @@ Output: [1,null,0,null,1]
 Explanation: 
 Only the red nodes satisfy the property "every subtree not containing a 1".
 The diagram on the right represents the answer.
-https://leetcode.com/problems/binary-tree-pruning
+
+Link: https://leetcode.com/problems/binary-tree-pruning
 /*****************************************/
 
 class Solution {
@@ -54,3 +55,5 @@ public:
         
     }
 };
+
+//This solution is written by Parth Jaiswal (https://github.com/parth-jaiswal)
