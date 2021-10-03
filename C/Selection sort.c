@@ -16,7 +16,7 @@ void main()
   selection_sort(arr,n);
   printf("The sorted array is\n");
   for(i=0;i<n;i++)
-    printf("%d\t",a[i]);
+    printf("%d\t",arr[i]);
    getch();
 }
 int smallest(int arr[],int k, int n)
@@ -37,7 +37,7 @@ void selection_sort(int arr[],int n)
   int k,pos,temp;
   for(k=0;k<n;k++)
   {
-    pos= smallest(arr,k,n):
+    pos= smallest(arr,k,n);
     temp=arr[k];
     arr[k]=arr[pos];
     arr[pos]=temp;
