@@ -1,0 +1,164 @@
+import java.util.*;
+
+public class CheckLLPalindrome {
+
+	static Node head;
+	static class Node{
+		int data;
+		Node next;
+
+		Node(int data)
+		{
+			this.data=data;
+		}
+	}
+
+
+	static CheckLLPalindrome  insert(CheckLLPalindrome  r,int d) {
+
+		Node newNode=new Node(d);
+		newNode.next=null;
+
+		if(r.head==null) {
+			r.head=newNode;
+		}
+		else {
+
+			Node last=r.head;
+			while(last.next!=null) {
+
+				last=last.next;
+
+			}
+			last.next=newNode;
+
+		}
+
+		return r;
+	}
+
+
+	static void checkPalindrome(CheckLLPalindrome  r) {
+
+		Node current=r.head;
+		if(current==null)
+			System.out.println("hi");
+		else if(current.next==null) {
+    	  System.out.println("\nPalindrome");
+      }
+      else {
+
+    	  int count=0;
+  		while(current!=null)
+  		{
+  			count++;
+  			current=current.next;
+  		}
+
+  		current=r.head;
+  		int mid=0;
+
+  		Node current1=null;
+  		if(count%2==0)
+  		{
+  			 mid=count/2;
+  			while(mid>1)
+  			{
+  	  			current=current.next;
+  	  			mid--;
+  	  	     }
+  	        	 current1=reversell(current.next);
+       	}
+  		else
+  		{
+  			 mid=count/2;
+   			while(mid>0)
+   			{
+   	  			current=current.next;
+   	  			mid--;
+   	  		}
+   	       	 current1=reversell(current.next);
+   		 }
+
+
+     	current=r.head;
+  		int i=0,count1=0;
+  		int m=count/2;
+
+  	while(m>0) {
+
+  		if(current.data==current1.data) {
+
+  			current=current.next;
+  			current1=current1.next;
+  			count1=1;
+  			m--;
+  		}
+  		else {
+  			count1=0;
+  			break;
+  		}
+  	 }
+  	if(count1==1) {
+  		System.out.println("\nPalindrome");
+  	}
+  		else {
+  			System.out.println("\nNot Palindrome");
+
+  		}
+
+      }
+
+  }
+
+	static Node reversell(Node n) {
+
+		if(n==null)
+			return n;
+		else {
+			Node cur=n;
+			Node next=null;
+			Node prev=null;
+			while(cur!=null) {
+				next=cur.next;
+				cur.next=prev;
+				prev=cur;
+				cur=next;
+			}
+			n=prev;
+		}
+
+		return n;
+	}
+
+
+	static void display(CheckLLPalindrome  r ) {
+
+		Node n=r.head;
+		System.out.print("LinkedList are :");
+		while(n!=null) {
+			System.out.print(n.data+" ");
+			n=n.next;
+		}
+	}
+
+
+	public static void main (String arg[]) {
+
+		Scanner sc=new Scanner(System.in);
+		CheckLLPalindrome  r= new CheckLLPalindrome ();
+		System.out.println("Enter the size of LinkedList");
+		int n=sc.nextInt();
+		int a[]=new int[n];
+		System.out.println("Enter elements in LinkedList");
+		for(int i=0;i<n;i++) {
+			a[i]=sc.nextInt();
+			insert(r,a[i]);
+
+		}
+
+		display(r);
+		checkPalindrome(r);
+
+	}
+}
