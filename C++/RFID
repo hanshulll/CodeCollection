@@ -1,0 +1,56 @@
+ #include <SPI.h>
+#include <MFRC522.h>
+ 
+#define SS_PIN 2
+#define RST_PIN 0
+#define Merah D0
+#define Hijau D1
+ 
+MFRC522 rfid(SS_PIN, RST_PIN);   
+MFRC522::MIFARE_Key key;
+String strID;
+ 
+void setup() 
+{
+  Serial.begin(115200);  
+  pinMode(Merah, OUTPUT);
+  pinMode(Hijau, OUTPUT);
+  SPI.begin(); // Init SPI bus
+  rfid.PCD_Init(); // Init MFRC522
+}
+ 
+void loop() 
+{
+  Serial.println("Tapping ur Card");
+  digitalWrite(Red, LOW);
+  digitalWrite(Green, LOW);
+  if (!rfid.PICC_IsNewCardPresent() || !rfid.PICC_ReadCardSerial()) return;
+  MFRC522::PICC_Type piccType = rfid.PICC_GetType(rfid.uid.sak);
+  if (piccType != MFRC522::PICC_TYPE_MIFARE_MINI &&
+      piccType != MFRC522::PICC_TYPE_MIFARE_1K &&
+      piccType != MFRC522::PICC_TYPE_MIFARE_4K) {
+    Serial.println(F("Your tag is not of type MIFARE Classic."));
+    return;
+  }
+  strID = "";
+  for (byte i = 0; i < 4; i++) {
+    strID +=
+      (rfid.uid.uidByte[i] < 0x10 ? "0" : "") +
+      String(rfid.uid.uidByte[i], HEX) +
+      (i != 3 ? ":" : "");
+  }
+  strID.toUpperCase();
+  if (strID != NULL)
+  {
+  Serial.print("ID Tag RFID : ");
+    Serial.println(strID);
+    digitalWrite(Green, HIGH);
+    delay(2000);
+  }
+ 
+  else{
+    Serial.println("No Data");
+    digitalWrite(Red, HIGH);
+    delay(2000);
+  }
+} 
