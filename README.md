@@ -85,7 +85,7 @@ git pull origin main
 #### Step 5: Contribute
 Make relevant changes according to the issue that you were assigned on. Contribute in any way you feel like :)
 
-#### Step 6: Commiting and Pushing
+#### Step 6: Committing and Pushing
 Once you have modified an existing file or added a new file to the project, you can add it to your local repository, which is being done with the git add command.
 
 ```bash
