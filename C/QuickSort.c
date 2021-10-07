@@ -1,3 +1,4 @@
+/* c program for quicksort */
 #include <stdio.h> 
 int partition(int x[],int lb,int ub){
     int up,down,pivot,temp;
