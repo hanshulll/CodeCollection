@@ -1,0 +1,20 @@
+# Configuration for new-pr-welcome - https://github.com/behaviorbot/HACTOBERFEST2021
+
+# Comment to be posted to on PRs from first time contributors in your repository
+newPRWelcomeComment: |
+ Thanks for opening this pull request! 🤗
+ Your PR will be reviewed and merged soon !! In the mean time don't forget to give a star to this repo !!
+ Wishing you a great [Hacktoberfest 2021](https://hacktoberfest.digitalocean.com) 🙌 🎉 ⚡️ 
+
+
+ **Show some ❤️**
+    - Consider leaving a ⭐ [here](https://github.com/hanshulll/HACKTOBERFEST2021/).
+    - Follow @hanshulll for more updates.
+ #### Say Hi on [Twitter](https://twitter.com/Hanshulll)! 👋
+ [![Twitter Follow](https://img.shields.io/twitter/follow/Hanshulll.svg?style=social)](https://twitter.com/Hanshulll)
+ 
+
+firstPRMergeComment: |
+ Congrats on merging your pull request! 🙌🎉⚡️
+ Show some love by starring a few of my [repositories](https://github.com/hanshulll?tab=repositories).
+

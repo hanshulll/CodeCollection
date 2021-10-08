@@ -1,0 +1,41 @@
+//https://codeforces.com/contest/1553/problem/D
+//Greedy Algorithm
+//Time Complexity- O(nlogn)
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+   ios_base::sync_with_stdio(false); 
+   cin.tie(NULL)
+   
+   int t; 
+   cin>>t;
+   for(int pt=1;pt<=t;pt++)
+   {
+       string s,k;cin>>s>>k;
+       int f=0;
+       int i,j=0;
+       int n=s.length(),p=k.length();
+       reverse(s.begin(),s.end());reverse(k.begin(),k.end());
+       for(i=0;i<n;i++)
+       {
+           if(j==p)break;
+           if(k[j]==s[i])j++;
+           else i++;
+       }
+       if(j!=p)
+       {
+          cout<<"NO\n";
+       }
+       else
+       {
+          cout<<"YES\n";
+       }
+    
+
+       
+   }
+   
+}
