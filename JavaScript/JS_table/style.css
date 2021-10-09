@@ -1,0 +1,25 @@
+body {
+  background-color: #20273a;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+div {
+  overflow: auto;
+}
+th {
+  background-color: #20273a;
+  color: #294e69;
+  border: 0;
+}
+tr:nth-child(2n + 1) {
+  background-color: #333b4e;
+}
+tr:nth-child(2n) {
+  background-color: #2d3447;
+}
+td {
+  border: 0.1vh solid #20273a;
+  color: #6b7083;
+}
+.name {
+  color: #af3e5e;
+}
