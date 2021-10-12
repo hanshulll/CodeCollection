@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music!!</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <div class="wrapper" id="container">
+      <header class="container">
+        <div class="back" id="back">
+          <img src="./img/back.png" alt="" />
+        </div>
+        <div class="position-text" id="topText"></div>
+        <div class="logo">
+          <img src="./img/logo.png" alt="" />
+        </div>
+      </header>
+      <div class="hero container">
+        <div class="image">
+          <img id="hero" src="./img/hero.jpg" alt="" />
+        </div>
+        <div class="text-container">
+          <div class="left">
+            <h1 id="title">Brown Munde</h1>
+            <h3 id="sub-title">Brown Brown</h3>
+          </div>
+          <div class="right-like" id="btnLike">
+            <img id="like" src="./img/dislike.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="players container">
+        <div class="timer">
+          <div class="current" id="current">0:00</div>
+          <div class="total" id="total">0:00</div>
+        </div>
+        <div class="progress-bar" id="progress-bar">
+          <div class="progress" id="progress"></div>
+        </div>
+        <audio src="" id="audio"></audio>
+        <div class="functions">
+          <div class="prev" id="prev">
+            <img src="./img/prev.png" alt="" />
+          </div>
+          <div class="play-pause" id="playPause">
+            <img id="onOff" src="./img/paused.png" alt="" />
+          </div>
+          <div class="next" id="next">
+            <img src="./img/next.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- <audio controls autoplay>
+        <source src="./music/Brown Munde.mp3" type="audio/mpeg" />
+      </audio> -->
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
