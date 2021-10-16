@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  #hanoiSettings {
+    padding: 0 15%;
+  }
+  
+  #answer {
+    height: 555px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+  
+  #answer > * {
+    padding-bottom: 2px;
+  }
+  
+  .optionsContainer {
+    height: 100%;
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 50px;
+  }
+  
+  .options > * {
+    padding-bottom: 2px;
+  }
+  
+  #animateHanoiBtn {
+    padding: 5px;
+    background: linear-gradient(#f6c88f, #ed9220);
+    border: 1px black solid;
+  }
+  
+  #canvas {
+    border: 1px black solid;
+  }
+  
