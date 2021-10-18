@@ -19,7 +19,7 @@ class EuclideanAlgorithm{
         num2=sc.nextInt();
              if(num1>0&&num2>0){
                 if(num1>num2){
-                    Euclid s=new Euclid();
+                    EuclideanAlgorithm s=new EuclideanAlgorithm();
                     s.euclid(num1,num2);
           
                 }
