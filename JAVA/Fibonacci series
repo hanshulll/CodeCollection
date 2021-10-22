@@ -1,0 +1,26 @@
+import java.util.*;
+class FibonacciSeries {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the number of terms:");
+        int n = sc.nextInt();
+
+        int i = 0, j = 1;
+        int next;
+
+        System.out.println("Fibonacci series is : ");
+
+        for (int k = 0; k < n; k++) {
+            if (k <= 1) {
+                next = k;
+            } else {
+                next = i + j;
+                i = j;
+                j = next;
+            }
+            System.out.print(next + " ");
+        }
+    }
+}
