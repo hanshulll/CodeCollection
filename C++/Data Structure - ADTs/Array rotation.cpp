@@ -23,12 +23,16 @@ void printArray(int arr[], int n)
 }
 int main()
 {
-    int arr[] = { 1, 2, 3, 4, 5, 6, 7 };
-    int n = sizeof(arr) / sizeof(arr[0]);
+    int n;
+    cin>>n;
+    int arr[n];
+    for(i=0;i<n;i++){
+       cin>>arr[i];}
+    
  
     // Function calling
     leftRotate(arr, 2, n);
-    printArray(arr, n);
+    print_Array(arr, n);
  
     return 0;
 }
