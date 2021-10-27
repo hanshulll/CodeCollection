@@ -1,0 +1,42 @@
+vector <int> countDistinct (int A[], int n, int k)
+    {
+        // brute force
+        
+        // set<int> st;
+        // vector<int> v;
+        // for(int i=0;i<=n-k;i++){
+        //     for(int j=i;j<i+k;j++){
+        //         st.insert(A[j]);
+        //     }
+        //     v.push_back(st.size());
+        //     st.clear();
+        // }
+        
+        // return v;
+        
+        
+        
+        int i=0,j=0;
+         unordered_map<int,int> mp;
+          vector<int> v;
+          while(j<k){
+              mp[A[j]]++;
+              j++;
+          }
+         
+         v.push_back(mp.size());
+         
+        
+        while(j<n){
+            mp[A[i]]--;
+            if(mp[A[i]]==0) mp.erase(A[i]);
+            i++;
+            mp[A[j]]++;
+            v.push_back(mp.size());
+            j++;
+        }
+        
+        return v;
+        
+        
+    }
