@@ -1,0 +1,27 @@
+#mainHeading{
+
+    background-color: antiquewhite;
+    padding: 34px;
+    border:4px solid black;
+    border-radius: 4px;
+
+ }
+ iframe{
+
+    border: 5px solid rgb(232, 142, 237);
+
+ }
+ .button{
+     padding: 4px;
+     margin: 5px;
+     color: rgb(0, 17, 255);
+     background-color: rgb(148, 209, 226);
+     border-radius: 5px;
+
+
+ }
+
+
+
+
+
