@@ -1,0 +1,48 @@
+#include<bits/stdc++.h>
+using namespace std;
+//Welcome To Hridoy's Code
+#define   ll                  long long
+#define   ull                 unsigned long long
+#define   pb                  push_back
+#define   em                  emplace_back
+#define   ff                  first
+#define   ss                  second
+#define   endl                "\n"
+#define   all(v)              (v.begin(), v.end())
+#define   rall(v)             (v.rbegin(), v.rend())
+#define   pi                  acos(-1.0)
+#define   LCM(LCM_X,LCM_Y)    (LCM_X/__gcd(LCM_X,LCM_Y))*LCM_Y
+#define   FastRead   ios_base::sync_with_stdio(0);cin.tie(0); cout.tie(0);
+const int MOD = (int)1e9+7;
+const int MAX = 1e6;
+int main()
+{
+    FastRead
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int n;
+        cin >> n;
+        vector<char>v(n+1);
+        for(int i=1; i<=n; i++)
+            cin >> v[i];
+        if(v[1]=='2' and v[n-2]=='0' and v[n-1]=='2' and v[n]=='0')
+            cout << "YES\n";
+        else if(v[1]=='2' and v[2]=='0' and v[n-1]=='2' and v[n]=='0')
+            cout << "YES\n";
+        else if(v[1]=='2' and v[2]=='0' and v[3]=='2' and v[n]=='0')
+            cout << "YES\n";
+        else if(v[1]=='2' and v[2]=='0' and v[3]=='2' and v[4]=='0')
+            cout << "YES\n";
+        else if(v[1]!='2' and v[n-3]=='2' and v[n-2]=='0' and v[n-1]=='2' and v[n]=='0')
+            cout << "YES\n";
+        else
+            cout << "NO\n";
+    }
+
+
+
+    return 0;
+
+}
