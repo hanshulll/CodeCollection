@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayStation</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+       <div class="navbar">
+          <img class="logo" src="images/logo.png" alt="">
+          <nav id="nav">
+              <ul id="menu-list">
+                  <li><a href="#">Game Controllers</a></li>
+                  <li><a href="#">VR Accesories</a></li>
+                  <li><a href="#">Media Remotes</a></li>
+                  <li><a href="#">Others</a></li>
+              </ul>
+          </nav>
+          <img id="menu" class="menu" src="images/menu.png" onclick="toggleMenu()" alt="">
+       </div>
+
+       <div class="row">
+           <div class="col-1">
+               <h2>PS4 V2 <br>Dualshock 4</h2>
+               <h3>Wireless Controller for PlayStation 4</h3>
+               <p>(Compatible/Generic)</p>
+               <h4>$40.25</h4>
+               <button type="button">Buy Now <img src="images/arrow.png" alt=""></button>
+           </div>
+           <div class="col-2">
+              <img src="images/controller.png" class="controller" alt="">
+              <div class="color-box"></div>
+              <div class="add-btn">
+                  <img src="images/add.png" class="add" alt="">
+                  <p><small>Add</small></p>
+              </div>
+            </div>
+       </div>
+
+       <div class="social">
+           <img src="images/fb.png" class="fb" alt="">
+           <img src="images/ig.png" class="ig" alt="">
+       </div>
+    </div>
+
+
+    <script>
+   const list = document.getElementById("menu-list");
+   const menu = document.getElementById("menu");
+      
+   list.style.maxHeight = "0px";
+
+   function toggleMenu() {
+        if(list.style.maxHeight == "0px") {
+            list.style.maxHeight = "130px";
+        }
+
+        else
+        {
+            list.style.maxHeight = "0px";
+        }
+   }
+
+    </script>
+</body>
+</html>
