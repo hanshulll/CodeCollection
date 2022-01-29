@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap');
+
+.container
+{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 80px 0;
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 100px;
+
+
+    
+
+}
+
+
+.container .card
+{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 50px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+
+.container .card .content
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    opacity: 0.5;
+    transition: 0.5s;
+     
+}
+
+.container .card:hover .content
+{
+    opacity: 1;
+    transform: translateY(-20px);
+    
+}
+
+.container .card .content .imgBx
+{
+    position: relative;
+    width: 290px;
+    height: 200px;
+    /* border-radius: 50%; to make image box square */
+    overflow: hidden;
+    border: 5px solid #000;
+}
+
+.contentBx
+{
+    width: 170px;
+    text-align: center;
+}
+
+.container .card .content .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .content .contentBx h2{
+    color: #86C232;
+    margin-top: 25px;
+}
+
+.card-btn{
+    
+    border: 2px solid #86C232;
+    border-radius: 20px;
+    background-color: #86C232;
+    transition: all 0.5s ease;
+    
+}
+
+.card-btn:hover{
+    background-color: #679527;
+    border: 2px solid #679527;
+}

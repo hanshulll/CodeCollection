@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tower of Hanoi</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+
+  <body>
+    <h1>Tower of Hanoi</h1>
+    <main>
+      <div id="movesDiv">
+        <h2>Moves</h2>
+        <div id="answer"></div>
+      </div>
+
+      <canvas id="canvas"></canvas>
+
+      <div id="hanoiSettings">
+        <h2>Options</h2>
+
+        <div class="optionsContainer">
+          <div class="options">
+            <label
+              >Number of disks
+              <input
+                type="number"
+                id="diskAmountInput"
+                min="1"
+                max="10"
+                value="3"
+              />
+            </label>
+
+            <label
+              >Number of pegs
+              <select id="pegsAmountInput">
+                <option value="3" selected>Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+                <option value="6">Six</option>
+                <option value="7">Seven</option>
+                <option value="8">Eight</option>
+                <option value="9">Nine</option>
+                <option value="10">Ten</option>
+              </select>
+            </label>
+
+            <div id="targetPegs">
+              <label
+                >Starting Peg
+                <select id="startingPegInput">
+                  <option value="0" selected>A</option>
+                  <option value="1">B</option>
+                  <option value="2" disabled>C</option>
+                </select>
+              </label>
+
+              <label
+                >Ending Peg
+                <select id="endingPegInput">
+                  <option value="0" disabled>A</option>
+                  <option value="1">B</option>
+                  <option value="2" selected>C</option>
+                </select>
+              </label>
+            </div>
+
+            <button id="animateHanoiBtn">Animate Solution</button>
+          </div>
+
+          <div class="options">
+            <label
+              >Play full animation
+              <input
+                type="checkbox"
+                id="fullAnimationCheckbox"
+                name="fullAnimationCheckbox"
+                checked
+              />
+            </label>
+
+            <label
+              >Animation speed
+              <input
+                type="number"
+                id="animationSpeed"
+                min="500"
+                max="10000"
+                value="1000"
+              />
+              ms
+            </label>
+
+            <button id="prevStepBtn" disabled>Previous Step</button>
+            <label
+              >Pause
+              <input
+                type="checkbox"
+                id="pauseCheckbox"
+                name="pauseCheckbox"
+                disabled
+              />
+            </label>
+            <button id="nextStepBtn" disabled>Next Step</button>
+          </div>
+
+          <div class="options">
+            <label>
+              <input
+                type="checkbox"
+                id="redGradientCheckbox"
+                name="redGradientCheckbox"
+                checked
+              />
+              <input
+                type="number"
+                class="colorSelector"
+                id="colorSelectorRed"
+                min="0"
+                max="255"
+                value="225"
+              />Red
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                id="greenGradientCheckbox"
+                name="greenGradientCheckbox"
+              />
+              <input
+                type="number"
+                class="colorSelector"
+                id="colorSelectorGreen"
+                min="0"
+                max="255"
+                value="10"
+              />Green
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                id="blueGradientCheckbox"
+                name="blueGradientCheckbox"
+              />
+              <input
+                type="number"
+                class="colorSelector"
+                id="colorSelectorBlue"
+                min="0"
+                max="255"
+                value="25"
+              />Blue
+            </label>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="hanoi.js"></script>
+  </body>
+</html>

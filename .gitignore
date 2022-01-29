@@ -1,0 +1,10 @@
+# Mac/OSX
+.DS_Store
+
+# Java
+*.class
+
+# C extensions
+*.so
+
+

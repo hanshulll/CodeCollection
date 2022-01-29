@@ -1,0 +1,10 @@
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(255, 255, 255) url('https://media.tenor.com/images/5022af525c2a121e52a12cfc6fd9df32/tenor.gif');
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    z-index: 999;
+    background-position: center;
+}
