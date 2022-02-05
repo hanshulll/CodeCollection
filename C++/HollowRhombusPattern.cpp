@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
             int n;  // No. of rows or columns or rhombus of size n
-            cout<"Enter the size of the rhombus";
+            cout<<"Enter the size of the rhombus";
             cin>>n;
             for (int i=1; i<=n; i++)
             {   
