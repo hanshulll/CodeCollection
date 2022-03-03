@@ -1,0 +1,38 @@
+class Solution {
+    public List<List<Integer>> fourSum(int[] nums, int target) {
+        //because res can be duplicated, we use set to deal with that
+        //Set of a list compare all the elements in the list defaultly, you don't need to override compare and hash function
+        Set<List<Integer>> res = new HashSet<List<Integer>>();
+        if(nums == null || nums.length < 4) {
+            return new ArrayList<>(res);
+        }
+        int n = nums.length;
+        Arrays.sort(nums);
+        //key represents sum of first two nums, value is the list of indexes of those two nums
+        //We dont need to worry about duplicate here, we deal with that in res set
+        Map<Integer, List<int[]>> map = new HashMap<>();
+        for(int i = 0; i < n; i++) {
+            for(int j = i + 1; j < n; j++) {
+                int sum = nums[i] + nums[j];
+                //check if current nums[i] and nums[j] can combine with previous first two nums to get a target value; 
+				if(map.containsKey(target - sum)) {
+                    List<int[]> indexes = map.get(target - sum);
+					for(int[] index : indexes) {
+                        // Here we already know that we can get 4 nums to get the target value, but we need those four nums comes in order
+						//assume we have first two nums nums[k], nums[l], and current nums are nums[i], nums[j], by definition, k < l and i < j are certain. So we only need to make sure that  l < i, then we can get k < l < i < j, and add it to result set 
+						if(index[1] < i) {
+                            //make a result
+                            List<Integer> candidate = Arrays.asList(nums[index[0]], nums[index[1]], nums[i], nums[j]);
+                            res.add(candidate);
+                        }
+                    }
+                }
+                List<int[]> temp = map.getOrDefault(sum, new ArrayList<>());
+                temp.add(new int[]{i, j});
+                map.put(sum, temp);
+            }
+        }
+        //convert from Set<List> to List<List>
+        return new ArrayList<>(res);
+    }
+}
